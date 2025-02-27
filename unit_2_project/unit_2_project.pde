@@ -29,6 +29,7 @@ void setup() {
   f4 = 400;
   f5 = 600; 
   f6 = 800;
+
 }
 
 
@@ -114,28 +115,32 @@ void draw() {
    if (x > 900){
     x = -200;
   }
+ 
+ 
+ 
+ 
 
-void setup() { 
- size(800, 600); 
- background(255);
- noStroke(); 
- fill(0); 
- ellipse(330, 200, 100, 100); 
- ellipse(470, 200, 100, 100); 
- ellipse(400, 300, 180, 180); 
+ fill(0); {
+ ellipse(x-70, 200, 100, 100); 
+ ellipse(x+70, 200, 100, 100); 
+ ellipse(x, 300, 180, 180); 
  fill(244, 194, 143); 
- ellipse(400, 330, 140, 120);
+ ellipse(x, 300, 150, 150);
  fill(255); 
- ellipse(370, 290, 25, 20); 
- ellipse(430, 290, 25, 20); 
+ ellipse(x-30, 290, 25, 20); 
+ ellipse(x+30, 290, 25, 20); 
  fill(0); 
- ellipse(370, 290, 10, 10); 
- ellipse(430, 290, 10, 10); 
- ellipse(400, 310, 25, 15); 
+ ellipse(x-30, 290, 10, 10); 
+ ellipse(x+30, 290, 10, 10); 
+ ellipse(x, 310, 25, 15); 
  noFill(); 
  stroke(0);  
 strokeWeight(2); 
- arc(400, 340, 60, 20, 0, PI); }
+ arc(x, 340, 60, 20, 0, PI); 
+}
+
+
+
 
 
 
